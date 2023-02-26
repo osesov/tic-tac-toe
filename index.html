@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <title>Крестики-нолики</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+        <script src="index.js" type="module"></script>
+    </head>
+
+    <body>
+        <div id="screen">
+        <h1>Крестики</h1>
+        <div class="toolbar">
+            <button id="restart">Restart</button>
+            <button id="randomMove">Random</button>
+            <button id="aiMove">AI</button>
+            <div class="clear vindent"></div>
+            <button id="load">Load</button>
+
+            <label for="file-selector" class="label">Load</label>
+            <input type="file" id="file-selector" accept=".json">
+            <button id="save">Save</button>
+        </div>
+        <div class="toolbar">
+            <input id="trainNumber" type="number" placeholder="Number of games" maxlength="10">
+            <button id="trainButton">Train</button>
+        </div>
+        <div class="grid">
+	        <div class="app_block" data-item="0">0</div>
+        	<div class="app_block" data-item="1">1</div>
+        	<div class="app_block" data-item="2">2</div>
+        	<div class="app_block" data-item="3">3</div>
+        	<div class="app_block" data-item="4">4</div>
+        	<div class="app_block" data-item="5">5</div>
+        	<div class="app_block" data-item="6">6</div>
+        	<div class="app_block" data-item="7">7</div>
+        	<div class="app_block" data-item="8">8</div>
+        </div>
+        <div id="cover">
+            <div class="panel">
+                <div>
+                    <div>Progress: <span id="status">QWE</span></div>
+                    <div>Passed: <span id="passedTime">ASD</span></div>
+                    <div>Rest: <span id="restTime">ZXC</span></div>
+                    <div>Total: <span id="totalTime">QAZ</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
